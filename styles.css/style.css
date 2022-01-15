@@ -25,6 +25,119 @@ a{
     text-decoration: none;
     color: black;
 }
+.new-chance::before{
+    content: "Start Your Journey As Influencer";
+    color: orange;
+    position: relative;
+    top: 0;
+    left: 0;
+    animation: typing 3s linear infinite;
+    z-index: 2;
+}
+@keyframes typing {
+    0%{
+        content:"";
+    }
+    3%{
+        content: "";
+    }
+    6%{
+        content: "S|";
+    }
+    9%{
+        content: "St|";
+    }
+    12%{
+        content: "Sta|";
+    }
+    15%{
+        content: "Star|";
+    }
+    18%{
+        content: "Start|";
+    }
+    21%{
+        content: "Start| ";
+    }
+    24%{
+        content: "Start Y|";
+    }
+    27%{
+        content: "Start Yo|";
+    }
+    30%{
+        content: "Start You|";
+    }
+    33%{
+        content: "Start Your|";
+    }
+    36%{
+            content: "Start Your| ";
+        }
+    39%{
+        content: "Start Your J|";
+    }
+    42%{
+        content: "Start Your Jo|";
+    }
+    45%{
+        content: "Start Your Jou|";
+    }
+    48%{
+        content: "Start Your Jour|";
+    }
+    51%{
+        content: "Start Your Journ|";
+    }
+    54%{
+        content: "Start Your Journe|";
+    }
+    57%{
+        content: "Start Your Journey|";
+    }
+    60%{
+        content: "Start Your Journey| ";
+    }
+    63%{
+        content: "Start Your Journey A|";
+    }
+    66%{
+        content: "Start Your Journey As|";
+    }
+    69%{
+        content: "Start Your Journey As| ";
+    }
+    72%{
+        content: "Start Your Journey As I|";
+    }
+    75%{
+        content: "Start Your Journey As In|";
+    }
+    78%{
+        content: "Start Your Journey As Inf|";
+    }
+    81%{
+        content: "Start Your Journey As Infl|";
+    }
+    84%{
+        content: "Start Your Journey As Influ|";
+    }
+    87%{
+        content: "Start Your Journey As Influe|";
+    }
+    90%{
+        content: "Start Your Journey As Influen|";
+    }
+    93%{
+        content: "Start Your Journey As Influenc|";
+    }
+    96%{
+        content: "Start Your Journey As Influence|";
+    }
+    99%{
+        content: "Start Your Journey As Influencer|";
+    }
+}
 .influencer{
     display: flex;
     justify-content: center;
@@ -32,6 +145,8 @@ a{
 }
 .new-chance{
     font-size: 3em;
+    position: relative;
+    margin-bottom: 40px;
 }
 .grab-first{
     color: white;
@@ -39,7 +154,7 @@ a{
     background-color: #E02C6D;
     width: 140px;
     height: 30px;
-    border-radius: 20px;
+    border-radius: 30px;
     margin-top: 10px;
 }
 .high-tech{
@@ -100,7 +215,7 @@ span{
 }
 .the-end{
     width: 100%;
-    height: 220px;
+    height: 180px;
     background-color: rgb(25, 2, 41);
 }
 .end{
