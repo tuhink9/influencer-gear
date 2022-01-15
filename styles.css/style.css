@@ -155,7 +155,13 @@ a{
 .career{
     width: 400px;
 }
-
+.journey{ 
+    overflow: hidden;
+}
+.journey:hover img{
+    transform: scale(1.5);
+    transition: transform 2s ease;
+}
 .new-chance{
     font-size: 3em;
     position: relative;
@@ -207,17 +213,19 @@ a{
     grid-row-gap: 20px;
     width: 100%;
 }
-.collection>.product:hover img{
-    transform: calc(1.5);
+.product{ 
+    overflow: hidden;
 }
-
+.product:hover img{
+    transform: scale(1.5);
+    transition: transform 2s ease;
+}
 .collection{
     background-color: #FFFFFF;
     width: 320px;
     height: 400px;
     padding: 10px;
     box-shadow: 5px 5px 5px 5px rgba(99, 98, 98, 0.205);
-    transition: transform 1s ease;
 }
 span{
     display: block;
@@ -243,6 +251,64 @@ span{
     margin-left: 400px;
     padding-top: 50px;
 }
+
+@media (min-width:768),(max-width:1024px) {
+    body{
+        width: 800px;
+        margin: 0;
+        padding: 0;
+    }
+    main{
+        width: 880px;
+    }
+    .beginner-influencer{
+        display: flex;
+        flex-direction: column;
+    }
+    .influencer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0 20px;
+    }
+    .career{
+        padding-left: 20px;
+    }
+    .journery{
+        order: 1;
+    }
+    .journey img{
+        width: 350px;
+        height: 350px;
+    }
+    .new-chance{
+        width: 100%;
+    }
+    .high-tech{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .influencer{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .popular{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .explore{
+        margin-left: 240px;
+    }
+    .the-end{
+        width: 740px;
+    }
+    .end{
+        margin-left: 300px;
+    }
+}
+
 @media (max-width:768px) {
     body{
         width: 400px;
