@@ -8,7 +8,7 @@ body{
     justify-content: center;
 }
 main{
-    width: 1100px;
+    width: 1200px;
     background-color: white;
     padding: 40px 40px;
     justify-content: center;
@@ -29,6 +29,9 @@ main{
 a{
     text-decoration: none;
     color: black;
+}
+.new-chance{
+    overflow:hidden;
 }
 .new-chance::before{
     content: "Start Your Journey As Influencer";
@@ -240,10 +243,11 @@ span{
     margin-left: 400px;
     padding-top: 50px;
 }
-@media (max-width:600px) {
+@media (max-width:768px) {
     body{
         width: 400px;
-        margin-right: 0;
+        margin: 0;
+        padding: 0;
     }
     main{
         width: 440px;
@@ -255,11 +259,18 @@ span{
     .influencer{
         display: flex;
         flex-direction: column;
-        width: 360px;
+        width: 100%;
         padding: 0 20px;
+    }
+    .career{
+        padding-left: 20px;
     }
     .journery{
         order: 1;
+    }
+    .journey img{
+        width: 350px;
+        height: 350px;
     }
     .new-chance{
         width: 100%;
@@ -268,32 +279,12 @@ span{
         display: flex;
         flex-direction: column;
     }
-    /* body{
-        width: 600px;
-    }
-    main{
-        width:100%; */
-        /* overflow-x: hidden; */
-        /* margin-left: 50px; */
-    /* }
-    .high-tech{
-        width: 100%;
-    }
-    /* .influencer{ */
-        /* display: flex;
-        flex-direction: column;
-    /* } */  
-    /* .high-tech{
-        width: 100px;
-    } */
+    
     .influencer{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
-    /* .popular{
-        display: flex;
-        flex-direction: column;
-    } */
+    
     .popular{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
